@@ -29,7 +29,7 @@ body {
     font-style: bold
 }
 
-.hero {
+.img {
     display: flex;
     padding: 40px 60px;
     gap: 40px;
@@ -78,4 +78,30 @@ button {
     background: rgb(126, 120, 111);
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+    .img{
+        flex-direction: column;
+    }
+
+    .images{
+        grid-template-columns: 1fr;
+    }
+
+    .content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .img{
+        flex-direction: column;
+    }
+
+    .content{
+        width: 100%;
+    }
 }
